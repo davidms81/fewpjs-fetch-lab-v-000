@@ -12,11 +12,5 @@ function renderBooks(json) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks(fetch('http://api.open-notify.org/astros.json')
-.then(function(response) {
-  return response.json();
-}).then(function(json) {
-  console.log(json);
-});
-  )
+  fetchBooks()
 })
